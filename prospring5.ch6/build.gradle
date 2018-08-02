@@ -1,0 +1,19 @@
+group 'com.dhxz'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'com.google.guava', name: 'guava', version: '25.1-jre'
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.0'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '5.0.8.RELEASE'
+    compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.5.0'
+}
